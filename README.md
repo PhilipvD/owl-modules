@@ -9,11 +9,9 @@ Build with <code>mvn package</code>
 ### Java arguments ###
 
 - Extract module (TOP/BOT/STAR)
-<p><code>java Xms4g -cp <program.jar> kik.modules/ModuleExtractor "./path-to-owl-ontology" "./path-to-seed-signature-txt" "TOP/STAR/BOT"</code></p>
 <p><code>java Xms4g -cp owl-modules.jar kik.modules/ModuleExtractor "./SNOMEDCT.owl" "./seed.txt" "TOP"</code></p>
 
 - Get subclasses of a given class
-<p><code>java Xms4g -cp <program.jar> kik.modules/SubclassExtractor "./path-to-owl-ontology" "URI"</code></p>
 <p><code>java Xms4g -cp owl-modules.jar kik.modules/SubclassExtractor "./SNOMEDCT.owl" "http://snomed.info/id/74732009"</code></p>
 
 
