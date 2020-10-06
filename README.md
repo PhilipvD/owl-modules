@@ -8,10 +8,10 @@ Build with <code>mvn package</code>
 ### Java arguments ###
 
 - Extract module (TOP/BOT/STAR)
-<p><code>java Xms4g -cp owl-modules.jar kik.modules/ModuleExtractor "./SNOMEDCT.owl" "./seed.txt" "TOP"</code></p>
+<p><code>java -Xms4g -cp owl-modules.jar kik.modules/ModuleExtractor "./SNOMEDCT.owl" "./seed.txt" "TOP"</code></p>
 
 - Get subclasses of a given class
-<p><code>java Xms4g -cp owl-modules.jar kik.modules/SubclassExtractor "./SNOMEDCT.owl" "http://snomed.info/id/74732009"</code></p>
+<p><code>java -Xms4g -cp owl-modules.jar kik.modules/SubclassExtractor "./SNOMEDCT.owl" "http://snomed.info/id/74732009"</code></p>
 
 
 ### Seed signature ###
