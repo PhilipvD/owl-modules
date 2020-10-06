@@ -1,29 +1,36 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Using the OWL API to extract modules from OWL ontologies. Includes seperate class for getting all subclasses of a particular class.
+Maven
 
-### What is this repository for? ###
+### Maven ###
+Build with <code>mvn package</code>
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Java arguments ###
 
-### How do I get set up? ###
+- Extract module (TOP/BOT/STAR)
+<p><code>java Xms4g -cp <program.jar> kik.modules/ModuleExtractor "./path-to-owl-ontology" "./path-to-seed-signature-txt" "TOP/STAR/BOT"</code></p>
+<p><code>java Xms4g -cp owl-modules.jar kik.modules/ModuleExtractor "./SNOMEDCT.owl" "./seed.txt" "TOP"</code></p>
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+- Get subclasses of a given class
+<p><code>java Xms4g -cp <program.jar> kik.modules/SubclassExtractor "./path-to-owl-ontology" "URI"</code></p>
+<p><code>java Xms4g -cp owl-modules.jar kik.modules/SubclassExtractor "./SNOMEDCT.owl" "http://snomed.info/id/74732009"</code></p>
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Seed signature ###
+One class per line
+```
+http://www.orpha.net/ORDO/Orphanet_C001
+http://www.orpha.net/ORDO/Orphanet_377790
+http://www.orpha.net/ORDO/Orphanet_377796
+http://www.orpha.net/ORDO/Orphanet_206599
+http://www.orpha.net/ORDO/Orphanet_1361
+http://www.orpha.net/ORDO/Orphanet_168615
+http://www.orpha.net/ORDO/Orphanet_440731
+http://www.orpha.net/ORDO/Orphanet_254704
+http://www.orpha.net/ORDO/Orphanet_280183
+http://www.orpha.net/ORDO/Orphanet_447795
+http://www.orpha.net/ORDO/Orphanet_168612
+http://www.orpha.net/ORDO/Orphanet_228000
+http://www.orpha.net/ORDO/Orphanet_1035
+``` 
