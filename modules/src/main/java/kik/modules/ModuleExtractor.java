@@ -75,7 +75,7 @@ public class ModuleExtractor {
 				moduleIRI = IRI.create(
 						"http://www.semanticweb.org/ontologies/untitled-ontology-module-" + moduleType.toLowerCase());
 			} else {
-				moduleIRI = IRI.create(ont.getOntologyID().getOntologyIRI() + "module" + moduleType.toLowerCase());
+				moduleIRI = IRI.create(ont.getOntologyID().getOntologyIRI().get() + "-module-" + moduleType.toLowerCase());
 			}
 
 			String filePathModule = ontologyFilePath.replace(".owl", "_module_" + moduleType.toLowerCase() + ".owl");
