@@ -1,7 +1,6 @@
 # README #
 
 Using the OWL API to extract modules from OWL ontologies. Includes seperate class for getting all subclasses of a particular class.
-Maven
 
 ### Maven ###
 Build with <code>mvn package</code>
